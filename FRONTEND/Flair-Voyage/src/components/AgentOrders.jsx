@@ -82,7 +82,11 @@ const AgentOrders = () => {
     }
   };
 
-  if (loading) return <CircularProgress />;
+  if (loading) return (
+    <div className="flex justify-center items-center h-40">
+          <CircularProgress />
+    </div>
+    );
   if (error) return <Alert severity="error">{error}</Alert>;
 
   return (

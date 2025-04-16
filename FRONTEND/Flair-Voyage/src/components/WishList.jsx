@@ -117,7 +117,7 @@ const WishList = () => {
           <CircularProgress />
         </div>
       ) : (
-        <Box sx={{ p: { xs: 2, md: 4 }, mb: 8 }}>
+        <Box sx={{ p: { xs: 2, md: 4 }, mb: 10 }}>
           {wishlist && wishlist.length > 0 ? (
             <Grid container spacing={2}>
               {wishlist.map((item) => (

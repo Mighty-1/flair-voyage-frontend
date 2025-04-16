@@ -31,8 +31,8 @@ const SignUp = () => {
     setLoading(true);
     try {
       const response = await axios.post(
-        // "https://flair-voyage-backend.onrender.com/api/register",
-        `${import.meta.env.VITE_APP_API_URL}/api/register`,
+        "https://flair-voyage-backend.onrender.com/api/register",
+        //`${import.meta.env.VITE_APP_API_URL}/api/register`,
         formData
       );
       if (response.status === 201) {

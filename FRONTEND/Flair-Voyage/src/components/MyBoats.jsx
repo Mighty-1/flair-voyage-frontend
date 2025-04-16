@@ -46,8 +46,8 @@ const MyBoats = () => {
     const fetchBoats = async () => {
       try {
         const response = await axios.get(
-          // "https://flair-voyage-backend.onrender.com/api/fetch-agent-yachts",
-          `${import.meta.env.VITE_APP_API_URL}/api/fetch-agent-yachts`,
+          "https://flair-voyage-backend.onrender.com/api/fetch-agent-yachts",
+          //`${import.meta.env.VITE_APP_API_URL}/api/fetch-agent-yachts`,
           { headers: { Authorization: `Bearer ${token}` } }
         );
 

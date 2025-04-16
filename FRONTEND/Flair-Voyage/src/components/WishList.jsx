@@ -60,7 +60,7 @@ const WishList = () => {
     };
 
     fetchWishlist();
-  }, [dispatch, navigate, token, wishlist]);
+  }, [dispatch, navigate, token]);
 
   // Function to add an item to wishlist using /add-item endpoint
   // const handleAddItem = async (yachtId) => {

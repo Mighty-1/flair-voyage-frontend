@@ -131,7 +131,7 @@ const AgentOrders = () => {
           <TableBody>
             {orders.map((order) => (
               <TableRow key={order._id}>
-                <TableCell>order.yacht && order.yacht.name ? order.yacht.name : "N/A"</TableCell>
+                <TableCell>{order.yacht?.name}</TableCell>
                 <TableCell>
                   {order.user.name} <br />
                   <Typography variant="body2" color="text.secondary">
